@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TestPage from "./Pages/TestPage";
+import MatchedBooksGallery from "./Pages/MatchedBooksGallery";
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<TestPage/>} />
+            <Route path="/" element={<MatchedBooksGallery/>} />
           </Routes>
         </BrowserRouter>
       </>
