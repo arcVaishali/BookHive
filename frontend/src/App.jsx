@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BookCard from "./components/BookCard";
+import TestPage from "./Pages/TestPage";
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<BookCard />} />
+            <Route path="/" element={<TestPage/>} />
           </Routes>
         </BrowserRouter>
       </>
