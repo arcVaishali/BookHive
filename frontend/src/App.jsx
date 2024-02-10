@@ -1,6 +1,6 @@
-import React from 'react'
-import TestPage from './Pages/TestPage'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import BookCard from "./components/BookCard";
 
 const App = () => {
   return (
@@ -8,14 +8,12 @@ const App = () => {
       <>
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<TestPage />} />
+            <Route path="/" element={<BookCard />} />
           </Routes>
         </BrowserRouter>
-
       </>
-
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
