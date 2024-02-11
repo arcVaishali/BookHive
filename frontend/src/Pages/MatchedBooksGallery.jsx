@@ -100,7 +100,9 @@ const MatchedBooksGallery = () => {
         </div>
       </div>
       <div className="grid grid-cols-12 col-span-12 m-4 p-16 gap-2">
-        <div className="text-5xl font-bold col-span-12 ml-4">Book Clubs</div>
+        <div className="text-5xl font-bold col-span-12 ml-4">Book Clubs
+        {/* see more button... */}
+        </div>
         <Carousel
           className="col-span-12"
           swipeable={true}
