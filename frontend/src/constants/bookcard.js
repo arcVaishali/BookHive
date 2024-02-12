@@ -156,4 +156,22 @@ export const books = [
     author: "Suzanne Collins",
     text: "Reprehenderit mollit non incididuicing elit exercitation duis amet.",
   },
+  {
+    image: bookdummyimage,
+    title: "The Catcher in the Rye",
+    author: "J.D. Salinger",
+    text: "Sit proident proident velit non aliquip tempor proident cillum.",
+  },
+  {
+    image: bookdummyimage,
+    title: "The Hunger Games",
+    author: "Suzanne Collins",
+    text: "Reprehenderit mollit non incididuicing elit exercitation duis amet.",
+  },
+  {
+    image: bookdummyimage,
+    title: "The Hunger Games",
+    author: "Suzanne Collins",
+    text: "Reprehenderit mollit non incididuicing elit exercitation duis amet.",
+  },
 ];
