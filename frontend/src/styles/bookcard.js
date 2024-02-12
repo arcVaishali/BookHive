@@ -1,5 +1,5 @@
 export const cardStyle =
-  "col-span-3 grid grid-rows-1 rounded-md shadow-lg m-4 p-2 border-2 border-gray-200";
+  "col-span-3 grid grid-rows-1 rounded-md shadow-lg m-2 p-2 border-2 border-gray-200";
 export const cardStyleWide =
   "col-span-6 grid grid-rows-1 rounded-md shadow-lg m-4 p-2 border-2 border-gray-200";
 export const cardStylePortrait =

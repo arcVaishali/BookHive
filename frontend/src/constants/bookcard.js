@@ -124,3 +124,36 @@ export const bookClubs = [
     text: "Ex pariatur elit id nulla consequat.Veniam excepteur duis pariatur elit duis consectetur et consectetur.",
   },
 ];
+
+export const books = [
+  {
+    image: bookdummyimage,
+    title: "1984",
+    author: "George Orwell",
+    text: "Sint est et fugiat ut incididunt boris mollit cillum amet esse anim.",
+  },
+  {
+    image: bookdummyimage,
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    text: "Est aliqua nostrud laboris exercitation consectetur ipsum.",
+  },
+  {
+    image: bookdummyimage,
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    text: "Excepteur sit cupidatat consectetuatat pariatur fugiat enim eu.",
+  },
+  {
+    image: bookdummyimage,
+    title: "The Catcher in the Rye",
+    author: "J.D. Salinger",
+    text: "Sit proident proident velit non aliquip tempor proident cillum.",
+  },
+  {
+    image: bookdummyimage,
+    title: "The Hunger Games",
+    author: "Suzanne Collins",
+    text: "Reprehenderit mollit non incididuicing elit exercitation duis amet.",
+  },
+];
