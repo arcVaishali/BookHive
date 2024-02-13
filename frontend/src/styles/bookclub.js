@@ -1,0 +1,1 @@
+export const bookClubCard = "grid grid-cols-12 col-span-4 m-4 p-4 gap-2 shadow-lg bg-white rounded-lg border-[1px] border-gray-200";

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { cardStyle } from "../styles/bookcard";
 import PrimaryButton from "./PrimaryButton";
 
@@ -12,10 +11,10 @@ const BookCard = (props) => {
       <div className="grid grid-cols-6 p-2 ">
         <div className="col-span-3 grid grid-rows-1">
           <div className="text-xl font-bold">{props.title}</div>
-          <p>{props.author}</p>
+          <p className="text-gray-500 front-extralight text-sm">{props.author}</p>
         </div>
         <div className="col-span-3 grid grid-rows-1">
-          <div>{props.text}</div>
+          <div className="text-xs text-gray-400 m-2">{props.text}</div>
           <PrimaryButton location="/book/1" text="Read more" />
         </div>
       </div>
