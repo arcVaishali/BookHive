@@ -20,14 +20,7 @@ const Swiper = () => {
         onCardLeftScreen={() => onCardLeftScreen("fooBar")}
         // preventSwipe={["right", "left"]}
       >
-        {books.map((book) => (
-          <BookCard
-            image={book.image}
-            title={book.title}
-            author={book.author}
-            text={book.text}
-          />
-        ))}
+       {/* -------------- */}
       </TinderCard>
     </div>
   );
