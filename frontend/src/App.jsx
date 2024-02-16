@@ -4,13 +4,13 @@ import MatchedBooksGallery from "./Pages/MatchedBooksGallery";
 import Home from "./Pages/Home";
 import UserDashboard from "./Pages/UserDashboard";
 import Swiper from "./Pages/Swiper";
-// import UserLogin from './Pages/UserLogin'
+import UserSignUp from './Pages/UserSignUp'
 
 const App = () => {
   return (
     <div>
       <>
-      {/* <UserLogin/> */}
+      <UserSignUp/>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>} />
