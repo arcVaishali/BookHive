@@ -1,10 +1,16 @@
-import React from 'react'
+// import React from 'react'
+import UserBody from "../components/UserBody"
+import UserHeader from "../components/UserHeader"
+import UserFooter from "../components/UserFooter"
+
 
 const Home = () => {
   return (
-    <div className='grid grid-cols-12 col-span-12 justify-center items-center'>
-      
-    </div>
+    <>
+    <UserHeader/>
+    <UserBody/>  
+    <UserFooter/>
+    </>
   )
 }
 
