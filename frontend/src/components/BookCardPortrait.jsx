@@ -4,11 +4,11 @@ import PrimaryButton from "./PrimaryButton";
 
 const BookCardPortrait = (props) => {
   return (
-    <div className={cardStylePortrait}>
+    <div className={cardStylePortrait + "  transition hover:scale-110 ease-in-out delay-150 duration-900 "}>
       <div className="p-2">
         <img src={props.image} className="w-fill h-fill" />
       </div>
-      <div className="grid grid-cols-6 p-2 ">
+      <div className="grid grid-cols-6 p-2">
         <div className="col-span-3 grid grid-rows-1">
           <div className="text-xl font-bold">{props.title}</div>
           <p className="text-gray-500 front-extralight text-sm">{props.author}</p>

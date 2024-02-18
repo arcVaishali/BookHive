@@ -4,7 +4,7 @@ import PrimaryButton from "./PrimaryButton";
 
 const BookCardWide = (props) => {
   return (
-    <div className={cardStyleWide}>
+    <div className={cardStyleWide + "  transition hover:scale-110 ease-in-out delay-150 duration-900 "}>
       <div className="p-2">
         <img src={props.image} className="w-fill h-fill" />
       </div>
