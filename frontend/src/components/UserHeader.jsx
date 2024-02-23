@@ -1,27 +1,27 @@
-// import React from 'react'
+import React from 'react'
 
-// const UserHeader = (props) => {
-//   return (
-//     <div className='grid grid-cols-12 col-span-12 gap-8 justify-center items-center'>
-//         <div className='col-span-3'>
-//             <img src={props.image} className='w-[200px] h-[200px] rounded-full'/>
-//         </div>
-//         <div className='grid grid-rows-1 col-span-9 gap-2'>
-//             <div className='grid grid-cols-12 col-span-12 justify-between items-center'>
-//                 <div className='col-span-9'>
-//                     <h2 className='text-xl text-gray-500'>{props.name}</h2>
-//                 </div>
-//                 <div className='col-span-3 m-2'>
-//                     <button className='text-sm p-2 rounded-full bg-black text-white w-[50%]'>Follow</button>
-//                 </div>
-//             </div>
-//             <div className='text-sm text-gray-400'>{props.about}</div>
-//         </div>
-//     </div>
-//   )
-// }
+const UserHeader = (props) => {
+  return (
+    <div className='grid grid-cols-12 col-span-12 gap-8 justify-center items-center'>
+        <div className='col-span-3'>
+            <img src={props.image} className='w-[200px] h-[200px] rounded-full'/>
+        </div>
+        <div className='grid grid-rows-1 col-span-9 gap-2'>
+            <div className='grid grid-cols-12 col-span-12 justify-between items-center'>
+                <div className='col-span-9'>
+                    <h2 className='text-xl text-gray-500'>{props.name}</h2>
+                </div>
+                <div className='col-span-3 m-2'>
+                    <button className='text-sm p-2 rounded-full bg-black text-white w-[50%]'>Follow</button>
+                </div>
+            </div>
+            <div className='text-sm text-gray-400'>{props.about}</div>
+        </div>
+    </div>
+  )
+}
 
-// export default UserHeader
+export default UserHeader
 
 // import React from 'react'
 // import {(Dialog, Disclosure, Popover, Transition)} from '@headlessui/react'
@@ -158,100 +158,100 @@
 // export default UserHeader;
 
 
-// To solve the TypeScript errors in your code, you need to do the following:
+// // To solve the TypeScript errors in your code, you need to do the following:
 
-// 1. Import necessary components from React and Fragment.
-// 2. Ensure that `setMobileMenuOpen` is defined and its type is declared.
-// 3. Define types for `products` and `callsToAction` arrays.
-// 4. Declare types for `item` properties used in the map functions.
+// // 1. Import necessary components from React and Fragment.
+// // 2. Ensure that `setMobileMenuOpen` is defined and its type is declared.
+// // 3. Define types for `products` and `callsToAction` arrays.
+// // 4. Declare types for `item` properties used in the map functions.
 
-// Here's the corrected code with TypeScript annotations:
+// // Here's the corrected code with TypeScript annotations:
 
 
-import React, { Fragment, useState } from 'react';
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
-import { Bars3Icon } from '@heroicons/react/20/solid'; // Assuming Bars3Icon is used in your code
-import { ForwardRefExoticComponent, RefAttributes } from 'react';
-import { Omit } from 'utility-types'; // Import any utility types needed
+// // import React, { Fragment, useState } from 'react';
+// // import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
+// // import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
+// // import { Bars3Icon } from '@heroicons/react/20/solid'; // Assuming Bars3Icon is used in your code
+// // import { ForwardRefExoticComponent, RefAttributes } from 'react';
+// // import { Omit } from 'utility-types'; // Import any utility types needed
 
-// Define the type for product items
-type Product = {
-  name: string;
-  description: string;
-  icon: React.ComponentType<{className: string; ariaHidden?: boolean;}>;
-  href: string;
-};
+// // // Define the type for product items
+// // type Product = {
+// //   name: string;
+// //   description: string;
+// //   icon: React.ComponentType<{className: string; ariaHidden?: boolean;}>;
+// //   href: string;
+// // };
 
-// Define the type for calls to action items
-type CallToAction = {
-  name: string;
-  icon: React.ComponentType<{className: string; ariaHidden?: boolean;}>;
-  href: string;
-};
+// // // Define the type for calls to action items
+// // type CallToAction = {
+// //   name: string;
+// //   icon: React.ComponentType<{className: string; ariaHidden?: boolean;}>;
+// //   href: string;
+// // };
 
-const UserHeader: React.FC = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false); // Assuming it's a boolean
+// // const UserHeader: React.FC = () => {
+// //   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false); // Assuming it's a boolean
 
-  // Dummy data for products
-  interface Product {
-    name: string;
-    description: string;
-    icon: React.ComponentType<any>; // Assuming PhoneIcon and PlayCircleIcon are React components
-    href: string;
-}
+// //   // Dummy data for products
+// //   interface Product {
+// //     name: string;
+// //     description: string;
+// //     icon: React.ComponentType<any>; // Assuming PhoneIcon and PlayCircleIcon are React components
+// //     href: string;
+// // }
 
-  // Dummy data for calls to action
-  const callsToAction: CallToAction[] = [
-    { name: 'Action 1', icon: PhoneIcon, href: '#' },
-    { name: 'Action 2', icon: PlayCircleIcon, href: '#' },
-  ];
+// //   // Dummy data for calls to action
+// //   const callsToAction: CallToAction[] = [
+// //     { name: 'Action 1', icon: PhoneIcon, href: '#' },
+// //     { name: 'Action 2', icon: PlayCircleIcon, href: '#' },
+// //   ];
 
-  return (
-    <div>
-      {/* Header Begins Here */}
-      <header className="bg-white">
-        <nav
-          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
-        >
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              {/* Assuming Bars3Icon is defined */}
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            {/* Rest of the code remains the same */}
-          </Popover.Group>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-        </nav>
-      </header>
-    </div>
-  );
-};
+// //   return (
+// //     <div>
+// //       {/* Header Begins Here */}
+// //       <header className="bg-white">
+// //         <nav
+// //           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+// //           aria-label="Global"
+// //         >
+// //           <div className="flex lg:flex-1">
+// //             <a href="#" className="-m-1.5 p-1.5">
+// //               <span className="sr-only">Your Company</span>
+// //               <img
+// //                 className="h-8 w-auto"
+// //                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+// //                 alt=""
+// //               />
+// //             </a>
+// //           </div>
+// //           <div className="flex lg:hidden">
+// //             <button
+// //               type="button"
+//               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+//               onClick={() => setMobileMenuOpen(true)}
+//             >
+//               <span className="sr-only">Open main menu</span>
+//               {/* Assuming Bars3Icon is defined */}
+//               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+//             </button>
+//           </div>
+//           <Popover.Group className="hidden lg:flex lg:gap-x-12">
+//             {/* Rest of the code remains the same */}
+//           </Popover.Group>
+//           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+//             <a
+//               href="#"
+//               className="text-sm font-semibold leading-6 text-gray-900"
+//             >
+//               Log in <span aria-hidden="true">&rarr;</span>
+//             </a>
+//           </div>
+//         </nav>
+//       </header>
+//     </div>
+//   );
+// };
 
-export default UserHeader;
+// export default UserHeader;
 
