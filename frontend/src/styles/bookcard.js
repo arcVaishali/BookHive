@@ -7,3 +7,8 @@ export const cardStylePortrait =
 
 export const primaryButton =
   "text-sm col-span-6 bg-black rounded-full shadow-lg border-2 border-black text-white hover:text-black hover:bg-white text-center px-2 py-[4px]";
+  export const secondaryButton =
+  "text-sm col-span-6 bg-white rounded-full shadow-lg border-2 border-white text-black hover:text-white hover:bg-black text-center px-2 py-[4px]";
+
+
+

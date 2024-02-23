@@ -6,6 +6,7 @@ import UserDashboard from "./Pages/UserDashboard";
 import Swiper from "./Pages/Swiper";
 import Login from "./Pages/Login";
 import UserSignUp from './Pages/UserSignUp'
+import LandingPage from "./Pages/LandingPage";
 // Building Home Page the User Header USerBody User Footer 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       <>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="/" element={<LandingPage/>} />
+            <Route path="/user-dashboard-2" element={<Home/>} />
             <Route path="/signup" element={<UserSignUp/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/books-gallery" element={<MatchedBooksGallery/>} />
